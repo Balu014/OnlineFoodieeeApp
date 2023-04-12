@@ -1,0 +1,55 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-7 img-sec">
+            
+        </div>
+        <!-- <div class="col-sm-1"></div> -->
+        <div class="col-sm-5 pt-5 log-sec ">
+            <div class="main-card">
+                <div class="card shadow " data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <div class="main-text">Online<span>Foodieee</span></div>
+                    <div class="card-body">
+                        <form>
+                            <div class="mb-3">
+                                <h4 class="text-dark">Login</h4>
+                            </div>
+                            <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" name="email" [(ngModel)]="email">
+                            </div>
+                            <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" name="password" [(ngModel)]="password">
+                            </div>
+                            <button type="submit" class="btn btn-primary" (click)="login()">Login</button>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <button  type="button"routerLink="/register" class="btn-borderless mt-3" style="text-decoration: none;">New User? <span class="text-primary">Register</span></button>
+                                </div>
+                                <div class="col-md-6">
+                                    <button type="button" routerLink="/forgotPassword" class="btn-borderless mt-3" >Forgot Passowrd?</button>
+                                </div>
+                            </div>
+                            <div class="text-dark text-center mt-3 mb-3">
+                                <b>OR</b>
+                            </div>
+                            <div class="google-sec">
+                                <div class="card shadow google-card " (click)="goggleSignIn()">
+                                    <div class="card-body">
+                                        <div class="card-body d-flex">
+                                            <div ><img src="././assets/images/google.png" width="25px" height="25px" ></div>
+                                            <div class="google-text"><b>Sign In with Google</b></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        
+    </div>
+</div>

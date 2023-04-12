@@ -1,0 +1,35 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-7 img-sec">
+            
+        </div>
+        <!-- <div class="col-sm-1"></div> -->
+        <div class="col-sm-5 pt-5 log-sec ">
+            <div class="main-card">
+                <div class="card shadow" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <div class="main-text">Online<span>Foodieee</span></div>
+                    <div class="card-body">
+                        <form>
+                            <div class="mb-3">
+                                <h4 class="text-dark">Forgot Passowrd?</h4>
+                            </div>
+                            <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" name="email" [(ngModel)]="email">
+                            </div>
+                            <button type="submit" class="btn btn-primary" (click)="forgotPass()">Verify</button>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <button type="button" routerLink="/login" class="btn-borderless mt-3" style="text-decoration: none;">Back to <span class="text-primary">Login</span></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        
+    </div>
+</div>
